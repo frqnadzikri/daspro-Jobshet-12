@@ -1,19 +1,22 @@
 public class PengunjungCafe15 {
 
+    // Method menggunakan for-each loop
     static void daftarPengunjung(String... namaPengunjung) {
         System.out.println("Daftar Nama Pengunjung:");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println("- " + namaPengunjung[i]);
+        for (String nama : namaPengunjung) {
+            System.out.println("- " + nama);
         }
-        System.out.println(); // supaya ada jarak output
+        System.out.println(); // jarak output
     }
 
-    // Fungsi main
     public static void main(String[] args) {
 
+        // Pemanggilan sesuai instruksi praktikum
         daftarPengunjung("Ali", "Budi", "Citra");
 
         daftarPengunjung("Andi");
+
         daftarPengunjung("Doni", "Eti", "Fahmi", "Galih");
     }
 }
+
